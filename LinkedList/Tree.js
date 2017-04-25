@@ -82,9 +82,9 @@ Tree.prototype.reverse = function() {
 	// until we rearch end of the tree
 	while(currNode) {
 		nextNode = currNode.next; // set reference to next
-    	currNode.next = prevNode; // reverse current next
-    	prevNode = currNode; // move previous one step
-    	currNode = nextNode; // move current one step
+		currNode.next = prevNode; // reverse current next
+		prevNode = currNode; // move previous one step
+		currNode = nextNode; // move current one step
 	}
 	//swap tail and head
 	this.head = prevNode;
